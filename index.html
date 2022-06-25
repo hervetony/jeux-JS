@@ -1,60 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./SRC/CSS/main.css">
   <title>mon jeux JS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="sript.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@300&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@700&family=Rubik+Moonrocks&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="console">
+    <div class="box-new-game">
+      <button class="btn-NP" name="button"><span class="material-symbols-rounded">
+          add_circle
+        </span>NEW GAME</button>
+    </div>
+
     <div class="player1">
-      <div class="player">PLAYER 1 </div>
-      <div class="box"><input type="texte" name="numberUser" class="right-side" placeholder="0"> </input></div>
+      <div class="player">PLAYER 1 <div class="cercle"></div>
+      </div>
+      <div class="box"><input type="texte" name="numberUser" class="left-side" placeholder="0"> </input></div>
       </form>
+      <div class="box-current">
+        <div class="img-current">
+          <center>CURRENT</center>
+          <center class="resultat">0</center>
+        </div>
+      </div>
     </div>
 
-   <div class="box-new-game" >
-    <button class="favorite styled" type="button"> <span class="material-symbols-rounded">
-      add_circle
-      </span> Nouvelle partie</button>
-  </div>
+    <div class="box-images-dé">
+      <ul class="galDes">
+        <img class="images-dé" src="images\dice-0.png" alt="Dé"></img>
+        <img class="images-dé-display" src="images\dice-1.png" alt="Dé"></img>
+        <img class="images-dé-display" src="images\dice-2.png" alt="Dé"></img>
+        <img class="images-dé-display" src="images\dice-3.png" alt="Dé"></img>
+        <img class="images-dé-display" src="images\dice-4.png" alt="Dé"></img>
+        <img class="images-dé-display" src="images\dice-5.png" alt="Dé"></img>
+        <img class="images-dé-display" src="images\dice-6.png" alt="Dé"></img>
+      </ul>
 
- <div class="box-images" >
-   <img class="images" src="images\dice-0.png" alt="Dé" />
-  </div>
+    </div>
 
-   <div class="box-thorw-dice" >
-    <button class="favorite styled" type="button"><span class="material-symbols-rounded">
-      switch_access_shortcut
-      </span> lancer les dés</button>
-   </div>
+    <div class="box-thorw-dice">
+      <button class="btn-RD" name="button"><span class="material-symbols-rounded">
+          cached
+        </span> ROLL DICE</button>
+    </div>
 
-   <div class="box-keep-dice" >
-    <button class="favorite styled" type="button"><span class="material-symbols-rounded">
-      download_done
-      </span> gradé le résultats</button>
-   </div>
+    <div class="box-keep-dice">
+      <button class="btn-HO" name="button"><span class="material-symbols-rounded">
+          place_item
+        </span>HOLD</button>
+    </div>
 
-   
     <div class="player2">
-      <div class="player">PLAYER 2 </div>
+      <div class="player">PLAYER 2 <div class="cercle"></div>
+      </div>
       <div class="box"><input type="texte" name="numberUser" class="right-side" placeholder="0"> </input></div>
-
       </form>
+      <div class="box-current">
+        <div class="img-current">
+          <center>CURRENT</center>
+          <center class="resultat">0</center>
+        </div>
+      </div>
     </div>
+
   </div>
+  <script src="jQuery.js"></script>
+  <script src="sript.js"></script>
+
+
+
+  <noscript>
+    javascrit n'est pas activé, le jeux ne va pas fonctionner.
+  </noscript>
+
 </body>
 
 </html>
