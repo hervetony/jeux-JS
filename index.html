@@ -19,20 +19,20 @@
 <body>
   <div class="console">
     <div class="box-new-game">
-      <button class="btnNg" name="button"><span class="material-symbols-rounded">
+      <button class="btnNg" name="button" onclick=" Refresh()" ><span class="material-symbols-rounded">
           add_circle
         </span>NEW GAME</button>
     </div>
 
     <div class="player1">
-      <div class="player">PLAYER 1 <div class="cercle"></div>
+      <div class="player">PLAYER 1 <div class="cercleplayer1"></div>
       </div>
-      <div class="box"><div class="resultatDeGauche"></div></div>
+      <div class="box"><div class="resultatplayer1"></div></div>
       </form>
       <div class="box-current">
         <div class="img-current">
           <center>CURRENT</center>
-          <center class="resultat">0</center>
+          <center class="chiffreresultatplayer1">0</center>
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
     <div class="box-images-dé">
       <div class="box-box-image-dé" >
         <img class="imagesdé" src="images\dice-0.png" alt="Dé"></img>
-        <img class="imagesdé" src="images\dice-1.png" alt="Dé"></img>
+        <img class="imagesdé"  id="imagesdé1"  src="images\dice-1.png" alt="Dé"></img>
         <img class="imagesdé" src="images\dice-2.png" alt="Dé"></img>
         <img class="imagesdé" src="images\dice-3.png" alt="Dé"></img>
         <img class="imagesdé" src="images\dice-4.png" alt="Dé"></img>
@@ -50,12 +50,10 @@
     </div>
 
     <div class="box-thorw-dice">
-      <button class="btnRd" name="button" ><span class="material-symbols-rounded">
+      <button class="btnRd" name="button"><span class="material-symbols-rounded">
           cached
         </span> ROLL DICE</button>
-        
     </div>
-
     <div class="box-keep-dice">
       <button class="btnHo" name="button"><span class="material-symbols-rounded">
           place_item
@@ -63,14 +61,14 @@
     </div>
 
     <div class="player2">
-      <div class="player">PLAYER 2 <div class="cercle"></div>
+      <div class="player">PLAYER 2 <div class="cercleplayer2"></div>
       </div>
-      <div class="box"><div class="resultatDeDroite"></div></div>
+      <div class="box"><div class="resultatplayer2"></div></div>
       </form>
       <div class="box-current">
         <div class="img-current">
           <center>CURRENT</center>
-          <center class="resultat">0</center>
+          <center class="chiffreresultatplayer2">0</center>
         </div>
       </div>
     </div>
