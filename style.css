@@ -51,18 +51,34 @@ background-color:  rgb(224, 224, 224);
 .player:active {
   font-family: 'Rubik Moonrocks', cursive;
 }
-.left-side{
+.resultatDeGauche{
   font-family: 'Lato', sans-serif;
+  font-size: 300px;
+  text-align:center;
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-color:transparent;
+  outline: none;
+  color: rgba(0, 0, 0, 0.481);
 }
-.right-side{
+.resultatDeDroite{
   font-family: 'Lato', sans-serif;
+  font-size: 300px;
+  text-align:center;
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-color:transparent;
+  outline: none;
+  color: rgba(0, 0, 0, 0.481);
 }
 
 /*---------CONSOLE FIN---------------------------- */
 
 
 /*---------BOUTTON GAME DEBUT---------------------------- */
-.btn-NP{
+.btnNg{
   height: 60px;
   width: auto;
   border: none;
@@ -72,7 +88,7 @@ background-color:  rgb(224, 224, 224);
   font-size: 35px;
   font-family: 'Lato', sans-serif;
 }
-.btn-RD{
+.btnRd{
   height: 40px;
   width: auto;
   border: none;
@@ -81,7 +97,7 @@ background-color:  rgb(224, 224, 224);
   font-size: 35px;
   font-family: 'Lato', sans-serif;
 }
-.btn-HO{
+.btnHo{
   height: 40px;
   width: auto;
   border: none;
@@ -90,13 +106,13 @@ background-color:  rgb(224, 224, 224);
   font-size: 35px;
   font-family: 'Lato', sans-serif;
 }
-.btn-NP:hover {
+.btnNb:hover {
   font-family: 'Rubik Moonrocks', cursive;
 }
-.btn-RD:hover {
+.btnRd:hover {
   font-family: 'Rubik Moonrocks', cursive;
 }
-.btn-HO:hover {
+.btnHo:hover {
   font-family: 'Rubik Moonrocks', cursive;
 }
 .material-symbols-rounded{
@@ -203,31 +219,36 @@ input{
   position: absolute;
   width: 100%;
   height:auto;
-  background-color:transparent;
   margin-top: 270px;
 }
-.box-images-dé.hedden{
-display:none
+.box-box-image-dé{
+  width: 160px;
+  height:160px;
+  border-radius: 20px;    
+  background-color: rgba(255, 255, 255, 0.64);
 }
+
 .box-current{
   display: flex;
   justify-content: center;
   width: auto;
   height:auto;
   background-color:transparent;
-  
 }
 
 /*-----------BOX BUTTON FIN---------------------------- */
 
-.images-dé-display{
-  display: none; 
+.imagesDéHidden{
+display: none;
+opacity: 0;
 }
-.images-dé{
+
+.imagesdé{
   width: 160px;
   height:160px;
   border-radius: 20px;    
-  list-style-type: none;     
+  visibility: hidden; 
+  position:absolute;
 }
 .img-current{
   width: auto;
@@ -239,4 +260,10 @@ display:none
 }
 .resultat{
   font-size:3em;
+}
+.Dice{
+ width: 160px;
+ height:160px;
+ border-radius: 20px;  
+ background-color: #fff;
 }
